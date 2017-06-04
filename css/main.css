@@ -110,15 +110,12 @@ header{
 
 /*segunda caja slider*/
 
-/*#box-2.flex-container{
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
+
 
 #sliders{
+	position: absolute;
 	width: 100%;
-	height: 70%;
-	background-size: 100% 100%;
+	height: 70vh;	
 	animation: sliders 8s infinite;
 }
 
@@ -132,56 +129,48 @@ header{
 	70%, 100%{
 		background-image: url(img/slider3.png);
 	}
-}*/
+}
 
 /*tercera caja*/
 
 #box-3.flex-container{
-	
-	
-	flex-direction: column;
-}
-
-#box-3{
 	background-color: white;
+	display: block;                    
+  	flex-flow: row wrap;			  
+  	justify-content: center; 	
 	width: 100%;
 	height: 100%;
-	margin-top: 50px;
+	margin-top: 30px;
+	left: 0;	
 }
 
 #box-3 h1 h2 h3{
-	color: black;		
-	
+	color: black;	
 }
 
-#box-3 h2{	
-	margin-right: 50px;
-}
 
 /*cuarta caja*/
 
-#box-5.flex-container{
-	
-	
+#box-5.flex-container{	
 	flex-direction: column;
 }
 
 #box-5{
 	background-color: white;
+	display: block;                    
+  	flex-flow: row wrap;			  
+  	justify-content: center; 	
 	width: 100%;
 	height: 100%;
-	margin-top: 50px;
-	left: 0;
+	margin-top: 10px;
+	left: 0;		
 }
 
 #box-5 h1 h2 h3{
-	color: black;		
-	
+	color: black;	
 }
 
-#box-5 iframe{	
 
-}
 
 /*caja cinco*/
 
@@ -191,7 +180,7 @@ header{
 	background-color: #333447;
 	width: 100%;
 	height: 100%;
-	top: 900px;
+	margin-top: 20px;
 	left: 0;
 	color: white;
 	justify-content: space-between;
@@ -208,6 +197,10 @@ header{
 	justify-content: space-between;
 }
 
+#box-4.flex-container iframe{
+	flex-wrap: wrap;
+}
+
 /*footer*/
 
 footer{
@@ -215,9 +208,10 @@ footer{
   	height: 180px;
   	background-color: #333447;
   	color: white;
-  	padding-top: 10px;
+  	padding: 10px;
   	display: block;
   	margin-bottom: 0;
+  	margin-top: 0;
 }
 
 .pie.flex-container{

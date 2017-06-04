@@ -12,10 +12,10 @@ window.onscroll = function(){
 	}
 }*/
 
-/*var menus = document.getElementById('menus');
+var menus = document.getElementById('menus');
 
 window.onscroll = function(){
-	"use strict";
+	
 	if (document.body.scrollTop > 130){
 		menus.classList.add('menu3');
 		menus.classList.remove('menu2');
@@ -23,5 +23,5 @@ window.onscroll = function(){
 		menus.classList.add('menu2');
 		menus.classList.remove('menu3');
 	}
-};*/
+};
 
