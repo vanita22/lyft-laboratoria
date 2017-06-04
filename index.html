@@ -1,140 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>AppLove with Flexbox</title>
-	<!-- Importa fontAwesome -->
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<!-- Importa la fuente del proyecto (Open Sans de Google Fonts (https://fonts.google.com) -->
-	<link href="https://fonts.googleapis.com/css?family=helvetica" rel="stylesheet">
-	<link rel="stylesheet" href="../themes/default/default.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="../nivo-slider.css" type="text/css" media="screen" />	   
-	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<!-- Enlaza tu CSS del proyecto aquí -->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
-	<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>	
+    <meta charset="UTF-8">
+    <title>AppLove with Flexbox</title>
+    <!-- Importa fontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Importa la fuente del proyecto (Open Sans de Google Fonts (https://fonts.google.com) -->
+    <link href="https://fonts.googleapis.com/css?family=helvetica" rel="stylesheet">
+    <link rel="stylesheet" href="../themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../nivo-slider.css" type="text/css" media="screen" />     
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <!-- Enlaza tu CSS del proyecto aquí -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>    
 </head>
 
 <body>
 
 <header>
-	<nav>
+    <nav>
+    <div id="menus">
+        <div class="menu flex-container">
+            <div class="logo-container">
+                <img src="img/logo-white.png" class="logo" alt="Logo" width="70">
+            </div>
 
-	<div id="menus">
-		<div class="menu flex-container">
-			<div class="logo-container">
-				<img src="img/logo-white.png" class="logo" alt="Logo" width="70">
-			</div>
-			<a href="#" class="text-uppercase link">Drive</a>
-			<a href="#" class="text-uppercase link">Explore</a>
-			<a href="#" class="text-uppercase link">Help</a>						
-		</div>
-	</div>
+            <a href="#" class="text-uppercase link">Drive</a>
+            <a href="#" class="text-uppercase link">Explore</a>
+            <a href="#" class="text-uppercase link">Help</a>
+            <button>Log in</button>                     
+        </div>
+    </div>
 
-	<div id="menus2">
-		<div class="menu2 flex-container">
-			<div class="logo-container2">
-				<img src="img/logo-pink.png" class="logo2" alt="Logo" width="70">
-			</div>
-			<a href="#" class="text-uppercase link">Drive</a>
-			<a href="#" class="text-uppercase link">Explore</a>
-			<a href="#" class="text-uppercase link">Help</a>						
-		</div>
-	</div>
+    <!--menu reemplazante-->
+    <div id="menus2">
+        <div class="menu2 flex-container">
+            <div class="logo-container2">
+                <img src="img/logo-pink.png" class="logo2" alt="Logo" width="70">
+            </div>
 
-	</nav>	
+            <a href="#" class="text-uppercase link">Drive</a>
+            <a href="#" class="text-uppercase link">Explore</a>
+            <a href="#" class="text-uppercase link">Help</a>
+            <button>Log in</button> 
+            <span class="btn">Sig up</span>                     
+        </div>
+    </div>
+
+    </nav>  
 </header>
 
-		<!--primera caja -->
-		<section id="principal" class="flex-container">
-			<!--caja slider-->						
-			<div id="sliders" class="nivoSlider">				
-				<img src="img/slider.jpg" data-thumb="img/slider.jpg" alt="" />
-				<img src="img/slider2.png" data-thumb="img/slider2.png" alt="" title="This is an example of a caption" />
-				<img src="img/slider3.png" data-thumb="img/slider3.png" alt="" data-transition="slideInLeft" />				
-			</div>	
-			
-		</section>
+        <!--primera caja -->
+        <section id="principal" class="flex-container">
+            <!--caja slider-->                      
+            <div id="sliders" class="nivoSlider">               
+                <img src="img/slider.jpg" data-thumb="img/slider.jpg" alt="" />
+                <img src="img/slider2.png" data-thumb="img/slider2.png" alt="" title="This is an example of a caption" />
+                <img src="img/slider3.png" data-thumb="img/slider3.png" alt="" data-transition="slideInLeft" />             
+            </div>  
+            
+        </section>
 
-		
-		<!--tercera caja-->
+        
+        <!--tercera caja-->
 
-		<section id="box-3" class="flex-container">	
-			<div class="row">
-				<div class="col-5">
-					<h3>WATCH</h3>
-					<h1>AMPLIFY YOUR RIDE</h1>
-					<h2>Lyft’s new emblem, Amp, is the secret to smooth pickups. Lighting up dashboards nationwide, the device makes it easy for passengers and drivers to find each other.</h2>
-				</div>
-				<div class="col-7 flex-container">
-					<iframe src="img/hero-video.mp4" frameborder="0" width="700" height="400"></iframe>
-				</div>
-			</div>	
-		</section>
+        <section id="box-3" class="flex-container"> 
+            
+                <div class="uno">
+                    <h3>WATCH</h3>
+                    <h1>AMPLIFY YOUR RIDE</h1>
+                    <h2>Lyft’s new emblem, Amp, is the secret to smooth pickups. Lighting up dashboards nationwide, the device makes it easy for passengers and drivers to find each other.</h2>
+                </div>
+                
+                    <iframe src="img/hero-video.mp4" frameborder="0" width="700" height="400"></iframe>
+            
+            
+        </section>
 
-			<!--cuarta caja-->
+            <!--cuarta caja-->
 
-		<section id="box-5" class="flex-container">	
-			<div class="row">
-				<div class="col-7 flexcontainer" align="left">
-					<iframe src="img/hero-video.mp4" frameborder="0" width="700" height="400"></iframe>
-				</div>
-				<div class="col-5">
-					<h3>WATCH</h3>
-					<h1>AMPLIFY YOUR RIDE</h1>
-					<h2>Lyft’s new emblem, Amp, is the secret to smooth pickups. Lighting up dashboards nationwide, the device makes it easy for passengers and drivers to find each other.</h2>
-				</div>
-			</div>	
-		</section>
+        <section id="box-5" class="flex-container"> 
+            <div class="row">
+                <div class="col-7 flex-container" align="left">
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/v8nyGzOLsdw" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="col-5">
+                    <h3>WATCH</h3>
+                    <h1>AMPLIFY YOUR RIDE</h1>
+                    <h2>Lyft’s new emblem, Amp, is the secret to smooth pickups. Lighting up dashboards nationwide, the device makes it easy for passengers and drivers to find each other.</h2>
+                </div>
+            </div>  
+        </section>
 
-		<!--quinta caja-->
+        <!--quinta caja-->
 
-		<section id="box-4" class="flex-container">
-			<div class="row">
-				<div class="col-2">
-					<h1>DRIVE<br>RIDE<br>LOG IN</h1>
-					<h2>Help<br>Cities<br>Airports<br>Fare Estimate<br>Free Ride Credits<br>Driver Bonus<br>Gift Cards</h2>
-				</div>
-				<div class="col-2">
-					<h1>PARTNER</h1>
-					<h2>Partnerships<br>Business<br>Ambassadors<br>Developers<br>Events</h2>
-				</div>
-				<div id="imagen1" class="col-2">
-					<h1>LEARN</h1>
-					<h2>Safety<br>Blog<br>Press<br>Careers<br>Driver Requirements<br>Driver Earnings<br>Driving Jobs<br>Round Up & Donate</h2>
-				</div>
-			
-				<div id="image" class="col-2" align="right">
-					<img src="img/app.jpg" width="200" height="100"><br><br>
-					<img src="img/google-play.png" width="200" height="100"><br><br>
-					<img src="img/amazon.png" width="200" height="100"><br><br>
-					<img src="img/microsoft.png" width="200" height="100">
-				</div>
-			</div>
-		</section>
+        <section id="box-6" class="flex-container"> 
+            <div class="row">
+                <div class="col-6">
+                    <h3>LEARN MORE</h3>
+                    <h1>ROUND UP & DONATE</h1>
+                    <h2>Opt in and we’ll round up each fare to the nearest dollar, then donate the difference to a charitable cause of your choice.</h2>
+                </div>
+                <div class="col-6 flex-container">
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/xj2VWLV0xCU" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>  
+        </section>
 
-		<footer>
-			<div class="pie flex-container">
-				<div class="row">
-					<div class="col-12" align="center">
-						<i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-facebook" aria-hidden="true"></i><i class="fa fa-instagram" aria-hidden="true"></i>
-					</div>
-					<div class="col-12" align="center">
-						<div class="line"></div>
-					</div>
-					<div class="col-12" align="center">
-						<p>© 2017 Lyft, Inc.TermsPrivacy</p>
-					</div>
-				</div>
-			</div>			
-		</footer>
-		
-	<!-- Enlaza tu JS aquí -->
-	<script type="text/javascript" src="js/lyft.js"></script>
-	<script type="text/javascript" src="js/jquery.min"></script>
-	
+        <!--sexta caja-->
+
+        <section id="box-4" class="flex-container">
+            <div class="row">
+                <div class="col-2">
+                    <h1>DRIVE<br>RIDE<br>LOG IN</h1>
+                    <h2>Help<br>Cities<br>Airports<br>Fare Estimate<br>Free Ride Credits<br>Driver Bonus<br>Gift Cards</h2>
+                </div>
+                <div class="col-2">
+                    <h1>PARTNER</h1>
+                    <h2>Partnerships<br>Business<br>Ambassadors<br>Developers<br>Events</h2>
+                </div>
+                <div id="imagen1" class="col-2">
+                    <h1>LEARN</h1>
+                    <h2>Safety<br>Blog<br>Press<br>Careers<br>Driver Requirements<br>Driver Earnings<br>Driving Jobs<br>Round Up & Donate</h2>
+                </div>
+            
+                <div id="image" class="col-2" align="right">
+                    <img src="img/app.jpg" width="200" height="100"><br><br>
+                    <img src="img/google-play.png" width="200" height="100"><br><br>
+                    <img src="img/amazon.png" width="200" height="100"><br><br>
+                    <img src="img/microsoft.png" width="200" height="100">
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="pie flex-container">
+                <div class="row">
+                    <div class="col-12" align="center">
+                        <i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-facebook" aria-hidden="true"></i><i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-12" align="center">
+                        <div class="line"></div>
+                    </div>
+                    <div class="col-12" align="center">
+                        <p>© 2017 Lyft, Inc.TermsPrivacy</p>
+                    </div>
+                </div>
+            </div>          
+        </footer>
+        
+    <!-- Enlaza tu JS aquí -->
+    <script type="text/javascript" src="js/lyft.js"></script>
+    <script type="text/javascript" src="js/jquery.min"></script>
+    
 </body>
 </html>

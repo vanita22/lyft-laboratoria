@@ -12,17 +12,16 @@ window.onscroll = function(){
 	}
 }*/
 
-window.onscroll = function(){
 
-	var menus = document.getElementById('menus');
-	var menus2 = document.getElementById('menus2');
+
+window.onscroll = function(){
 	
-	if (document.body.scrollTop > 130){
-		menus.classList.add('menus2');
-		menus.classList.remove('menus');
+	if (document.body.scrollTop >= 130){
+		document.getElementById('menus').style.display = 'none';
+		document.getElementById('menus2').style.display = 'block';
 	} else{
-		menus.classList.add('menus');
-		menus.classList.remove('menus2');
+		document.getElementById('menus2').style.display = 'none';
+		document.getElementById('menus').style.display = 'block';
 	}
 }
 
