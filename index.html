@@ -7,16 +7,23 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<!-- Importa la fuente del proyecto (Open Sans de Google Fonts (https://fonts.google.com) -->
 	<link href="https://fonts.googleapis.com/css?family=helvetica" rel="stylesheet">
-	       
+	<link rel="stylesheet" href="../themes/default/default.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../nivo-slider.css" type="text/css" media="screen" />	   
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<!-- Enlaza tu CSS del proyecto aquí -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	
+	<link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>	
 </head>
+
 <body>
 
-	<header>
-	<nav id="menus">
+<header>
+	<nav>
+
+	<div id="menus">
 		<div class="menu flex-container">
 			<div class="logo-container">
 				<img src="img/logo-white.png" class="logo" alt="Logo" width="70">
@@ -25,15 +32,30 @@
 			<a href="#" class="text-uppercase link">Explore</a>
 			<a href="#" class="text-uppercase link">Help</a>						
 		</div>
+	</div>
+
+	<div id="menus2">
+		<div class="menu2 flex-container">
+			<div class="logo-container2">
+				<img src="img/logo-pink.png" class="logo2" alt="Logo" width="70">
+			</div>
+			<a href="#" class="text-uppercase link">Drive</a>
+			<a href="#" class="text-uppercase link">Explore</a>
+			<a href="#" class="text-uppercase link">Help</a>						
+		</div>
+	</div>
 
 	</nav>	
-	</header>
+</header>
 
 		<!--primera caja -->
 		<section id="principal" class="flex-container">
-
 			<!--caja slider-->						
-			<div id="sliders"></div>	
+			<div id="sliders" class="nivoSlider">				
+				<img src="img/slider.jpg" data-thumb="img/slider.jpg" alt="" />
+				<img src="img/slider2.png" data-thumb="img/slider2.png" alt="" title="This is an example of a caption" />
+				<img src="img/slider3.png" data-thumb="img/slider3.png" alt="" data-transition="slideInLeft" />				
+			</div>	
 			
 		</section>
 
