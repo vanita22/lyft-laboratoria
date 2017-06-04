@@ -42,11 +42,6 @@ a {
  	float: left;
 }
 
-.logo:hover{
-	background-image: url(img/logo-pink.png);
-	width: 70px;
-	cursor: pointer;
-}
 
 .flex-container{
 	display: flex;
@@ -56,25 +51,29 @@ header{
   	position: absolute;
   	background: transparent;
   	width: 100%;
-  	top: 0;
-  	cursor: pointer;
+  	top: 0; 	
 }
 
-.menu{
-  	background-color: transparent; 
+.menu{   
   	position: fixed; 
   	top: 0;
   	left: 0;
   	width: 100%;
-  	padding: 30px;
-  	-webkit-transition:all 1ms ease;
-	-o-transition:all 1ms ease;
-	transition:all 1ms ease;
+  	padding: 30px;     	
+}
+
+.menu2{
+	background-color: transparent;
+}
+
+.menu3{
+	background-color: white;
 }
 
 .menu.flex-container{
 	justify-content: flex-start;
 }
+
 
 .logo-container{
 	margin-left: 40px;
@@ -86,26 +85,17 @@ header{
 	height: 70px;
 }
 
-.menu.flex-container.logo-container img a:hover {
-	background-color: white;
-	overflow: scroll;
-}
 
-.menu.flex-container.logo-container img a:active {
-	background-color: white;
-	color: black;
-	overflow: scroll;
-}
 
 /*primera caja*/
 
 #principal{
-	background-image: url(../img/lyft.png);
+	background-image: url(../img/color.jpg);
   	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
   	background-attachment: fixed;
-  	height: 200vh;
+  	height: 100vh;
   	width: 100%;  
   	top: 0;
   	left: 0;
@@ -116,5 +106,9 @@ header{
 
   	color: whitesmoke;
 }
+
+/*segunda caja*/
+
+
 
 
