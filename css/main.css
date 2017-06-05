@@ -25,9 +25,13 @@ img {
  	vertical-align: middle;
 }
 
-a {
+a{
  	color: white;
  	text-decoration: none;
+}
+
+a:hover{
+	color: #FF00BF;
 }
 
 .link{
@@ -97,12 +101,15 @@ header{
   	left: 0;
   	width: 100%;
   	padding: 30px;  
-  	z-index: 1;  
-  	visibility: none;	
+  	z-index: 1;    		
 }
 
 .menu2 a{
-	color: black;
+	color: #333447;
+}
+
+.menu2 a:hover{
+	color: #FF00BF;
 }
 
 
@@ -125,8 +132,8 @@ header{
 	background-color: white;
 	border: 1px solid black;
 	color: black;
-	width: 90px;
-	height: 45px;
+	width: 100px;
+	height: 50%;
 	border-radius: 7px;
 	margin-top: 10px;
 	font-size: 20px;
@@ -135,7 +142,7 @@ header{
 
 .menu2 span{
 	background-color: white;
-	border: 1px solid #FF00BF;
+	border: 2px solid #FF00BF;
 	color: #FF00BF;
 	width: 100px;
 	height: 45px;
@@ -143,6 +150,7 @@ header{
 	margin-top: 10px;
 	font-size: 20px;
 	text-align: center;
+
 }
 
 /*primera caja*/
@@ -165,7 +173,7 @@ header{
   	color: whitesmoke;
 }
 
-/*segunda caja slider*/
+/*caja slider*/
 #principal.flex-container{
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -239,7 +247,7 @@ header{
 	font-size: 20px;
 }
 
-/*caja seis*/
+/*quinta caja*/
 
 #box-6.flex-container{
 	background-color: white;
@@ -249,12 +257,13 @@ header{
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
-	margin-top: 0;
+	margin-top: 0;	
 	left: 0;	
 }
 
 #box-6 h1 h2 h3{
-	color: black;	
+	color: black;
+	align-items: center;
 }
 
 #box-6 h3{
@@ -265,7 +274,7 @@ header{
 	font-size: 20px;
 }
 
-/*caja seis*/
+/*información*/
 
 #box-4.flex-container{
 	justify-content: space-around;
@@ -299,8 +308,8 @@ header{
 	flex-wrap: wrap;
 }
 
-#box-4 h2{
-	font-size: 20px;
+#box-4 a{
+	font-size: 15px;
 }
 
 /*footer*/
@@ -322,7 +331,7 @@ footer{
 
 .line{
 	border-bottom: 2px solid white;
-	width: 400px;
+	width: 800px;
 }
 
 .pie i{
